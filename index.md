@@ -1,1 +1,1 @@
-[BRL-CAD]
+[BRL-CAD](BRL-CAD)
