@@ -2,7 +2,8 @@
 
 # Compiling
 
-`<~>` represents a term which has to be set on user's demand
+* `<~>` represents a term which has to be set on user's demand.
+* If you want to use the MS Visual Studio compiler, use the corresponding Visual Studio command shell for the following build steps.
 
 ## Building the [bext](https://github.com/BRL-CAD/bext) reposity
 In an empty directory, created for the bext build files, open a command shell and type:
