@@ -3,7 +3,7 @@
 # Compiling
 
 * `<~>` represents a term which has to be set on user's demand.
-* If you want to use the MS Visual Studio compiler, use the corresponding Visual Studio command shell for the following build steps.
+* If you want to use the MS Visual Studio compiler, use the corresponding Visual Studio command shell in the following build steps.
 
 ## Building the [bext](https://github.com/BRL-CAD/bext) reposity
 In an empty directory, created for the bext build files, open a command shell and type:
@@ -23,6 +23,8 @@ In an empty directory, created for the brlcad build files, open a command shell 
 ```
 cmake <path to the cloned brlcad repository> -DCMAKE_BUILD_TYPE=<build type> -DCMAKE_INSTALL_PREFIX=<path to a directory, where your user has writing permission> -DBRLCAD_EXT_DIR=<path to the bext build directory from the step before>
 ```
+
+If you see compiler errors, unset `BRLCAD_ENABLE_STRICT`, e.g. by adding `-DBRLCAD_ENABLE_STRICT=OFF` to the cmake command line.
 
 After building the binaries, they should be installed (i.e., build the "install" target), to get the default directory structure.
 
